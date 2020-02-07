@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="developer.neel.com.bioxin.adapter.product.ProductListAdapterViewModel" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cly_fresh_finds_item"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spaceXSmall"
+        android:layout_marginRight="@dimen/spaceXSmall">
+
+
+        <ImageView
+            android:id="@+id/imv_list_item"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:background="@drawable/bg_off_white_rounded"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/ll_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src = "@drawable/bioxin_logo"
+
+
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/iv_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <TextView
+                android:id="@+id/lbl_item_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="@{viewModel.getTitle()}"
+                tools:text="Salwar"
+                android:layout_marginTop="@dimen/spaceXSmall"
+                />
+
+
+            <ImageView
+                android:id="@+id/item_fresh_finds_wishlist"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".2"
+
+
+                />
+
+        </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_taka_cyan"
+                android:layout_gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ll_title"
+                />
+
+        <TextView
+            android:id="@+id/lbl_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:singleLine="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/iv_icon"
+            app:layout_constraintTop_toTopOf="@id/ll_title"
+
+            app:layout_constraintVertical_bias="0.55"
+            tools:text="400" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
