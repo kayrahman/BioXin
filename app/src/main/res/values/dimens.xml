@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="spaceXSmall">5dp</dimen>
+    <dimen name="space0dp">0dp</dimen>
+    <dimen name="spaceSmall">5dp</dimen>
+    <dimen name="defaultIconSizeLarge">30dp</dimen>
+    <dimen name="space4dp">4dp</dimen>
+    <dimen name="spaceNormal">15dp</dimen>
+    <dimen name="space8dp">8dp</dimen>
 </resources>

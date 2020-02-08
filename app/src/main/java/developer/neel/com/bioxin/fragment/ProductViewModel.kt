@@ -26,7 +26,7 @@ class ProductViewModel : ViewModel() {
 
         productResultList = LivePagedListBuilder(factory,
             PagedList.Config.Builder()
-                .setPageSize(100)
+                .setPageSize(10)
                 .setEnablePlaceholders(true)
                 .build()
         ).build() as LiveData<PagedList<Product>>

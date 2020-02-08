@@ -4,4 +4,15 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorWhite">#FFFFFF</color>
+
+
+    <!--product detail fragment-->
+    <color name="colorToolbarItemBg">#30e5f2f9</color>
+    <color name="colorToolbarItemBgDark">#60e5f2f9</color>
+    <color name="color_orange">#BB2D30</color>
+    <color name="color_gray">#e5e5e5</color>
+
+    <color name="colorOrange">#ff8c00</color>
+    <color name="color_dark_yellow">#E59245</color>
+    <color name="colorBgBtnSelect">#FFC000</color>
 </resources>
